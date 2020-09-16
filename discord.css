@@ -1,18 +1,18 @@
 * {
     font-family: Whitney, "Apple SD Gothic Neo", NanumBarunGothic, "맑은 고딕", "Malgun Gothic", Gulim, 굴림, Dotum, 돋움, "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #fff;
-  }
+}
 
-  a {
+a {
     color: #00b0f4;
     text-decoration: none;
-  }
+}
 
-  a:focus {
+a:focus {
     outline: none;
-  }
+}
 
-  body {
+body {
     background-color: #36393f;
     display: flex;
     flex-direction: column;
@@ -20,10 +20,10 @@
     align-items: center;
     height: 100vh;
     margin: 0;
-  }
+}
 
 
-  img {
+img {
     position: relative;
     display: block;
     color: #fff;
@@ -32,19 +32,19 @@
     border-radius: 3px;
     height: 225px;
     width: 400px;
-  }
+}
 
-  table {
+table {
     margin-top: 1rem;
     width: 400px;
-  }
+}
 
-  tr {
+tr {
     display: flex;
     flex-direction: column;
-  }
+}
 
-  label {
+label {
     color: #8e9297;
     font-size: 12px;
     line-height: 16px;
@@ -53,9 +53,9 @@
     -webkit-box-flex: 1;
     flex: 1;
     cursor: default;
-  }
+}
 
-  input {
+input {
     color: #dcddde;
     background-color: rgba(0, 0, 0, 0.1);
     border: 1px solid rgba(0, 0, 0, 0.3);
@@ -64,18 +64,18 @@
     font-size: 1rem;
     transition: border-color .2s ease-in-out;
     width: calc(100% - 22px);
-  }
+}
 
-  input:focus {
+input:focus {
     outline: none;
     border-color: #7289da !important;
-  }
+}
 
-  input:hover {
+input:hover {
     border-color: #040405;
-  }
+}
 
-  button {
+button {
     color: #fff;
     background-color: #7289da !important;
     height: 32px;
@@ -101,8 +101,8 @@
     cursor: pointer;
     margin-left: auto;
     outline: none;
-  }
+}
 
-  button:hover {
+button:hover {
     background-color: #677bc4;
-  }
+}
