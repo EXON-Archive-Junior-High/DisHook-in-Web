@@ -4,29 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="discord.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <title>Document</title>
 </head>
 <body>
     <div class="top">
         <h1>DisHook</h1>
-        <p>In Web</p>
     </div>
 
     <div class="form">
         <form onsubmit="return false" method="post">
-            <h4>WebHook Link</h4>
-            <input id="webhook-link" placeholder="Webhook Link...">
-            <h4>WebHook Name</h4>
-            <input id="webhook-name" placeholder="Webhook Name...">
-            <h4>WebHook Avatar Url</h4>
-            <input id="webhook-avatar-url" placeholder="Webhook Avatar Url...">
-            <h4>WebHook Content</h4>
-            <input id="webhook-content" placeholder="Webhook Content...">
-            <h4></h4>
+            <tr>
+                <label>WebHook Link</label>
+                <td><input id="webhook-link"></td>
+            </tr>
+            <p></p>
+            <tr>
+                <label>WebHook Name</label>
+                <input id="webhook-name">
+            </tr>
+            <p></p>
+            <tr>
+                <label>WebHook Avatar Url</label>
+                <input id="webhook-avatar-url">
+            </tr>
+            <p></p>
+            <tr>
+                <label>WebHook Content</label>
+                <input id="webhook-content">
+            </tr>
+            <td></td>
             <button onclick="sendWebhook(document.querySelector('#webhook-link').value, document.querySelector('#webhook-content').value, document.querySelector('#webhook-name').value, document.querySelector('#webhook-avatar-url').value);
             document.querySelector('#webhook-content').value = ''">전송</button>
         </form>
+    </div>
+
+    <div class="bottom">
+        <a href="https://github.com/1-EXON/DisHook-in-Web" type="button" class="btn btn-dark btn-floating">
+            <i class="fab fa-github fa-lg"></i>
+        </a>
     </div>
 
     
