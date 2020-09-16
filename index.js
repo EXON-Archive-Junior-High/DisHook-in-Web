@@ -1,11 +1,10 @@
-const webhook = document.querySelector("#webhook")
+const webhookContent = document.querySelector("#webhook-content")
 
-
-function sendWebhook(content){
-    let URL = `https://discordapp.com/api/webhooks/755676013874249828/GXyFopRfnAQNalYYoRun0OkAwZqXLSSxVY0FZurNfg4rIBk1MWRSTMy3fpdrVxFHmyLA`;
-    fetch(URL, {
+function sendWebhook(url, content){
+    
+    fetch(url, {
      "method":"POST",
-     "headers": {"Content-Type": "application/json"},
+     "headers": {"Content-Type" : "application/json"},
      "body": JSON.stringify({
         "content":content
       })
