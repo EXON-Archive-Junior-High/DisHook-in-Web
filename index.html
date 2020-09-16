@@ -17,10 +17,15 @@
         <form onsubmit="return false" method="post">
             <h4>WebHook Link</h4>
             <input id="webhook-link" placeholder="Webhook Link...">
+            <h4>WebHook Name</h4>
+            <input id="webhook-name" placeholder="Webhook Name...">
+            <h4>WebHook Avatar Url</h4>
+            <input id="webhook-avatar-url" placeholder="Webhook Avatar Url...">
             <h4>WebHook Content</h4>
             <input id="webhook-content" placeholder="Webhook Content...">
             <h4></h4>
-            <button onclick="sendWebhook(document.querySelector('#webhook-link').value, document.querySelector('#webhook-content').value)">전송</button>
+            <button onclick="sendWebhook(document.querySelector('#webhook-link').value, document.querySelector('#webhook-content').value, document.querySelector('#webhook-name').value, document.querySelector('#webhook-avatar-url').value);
+            document.querySelector('#webhook-content').value = ''">전송</button>
         </form>
     </div>
 
